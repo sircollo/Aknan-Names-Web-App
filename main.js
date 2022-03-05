@@ -16,6 +16,11 @@ let yearDropdown = document.getElementById('year-dropdown');
     var userInputDate = document.getElementById("userdate").value;
     var userInputMonth = document.getElementById("usermonth").value;
     var year = document.getElementById("year-dropdown");
+
+    //aknan Names
+    var maleName = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
+    var femaleName = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
+    var daysOfWeek = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
     
    
     //convert userInputDate and userInputMonth to int
@@ -43,6 +48,7 @@ let yearDropdown = document.getElementById('year-dropdown');
     //get user selected year
     var userYear = year.value;
     var userYear = year.options[year.selectedIndex].text;
+    console.log(userYear);
     
     //get century
     let century = userYear[0] + userYear[1];
@@ -61,11 +67,30 @@ let yearDropdown = document.getElementById('year-dropdown');
     var gender = document.getElementsByName("gender");
     if(gender[0].checked == true){
       var gender = "male";
-      alert("male")
+      console.log("male");
     }else if(gender[1].checked == true){
       var gender = "female";
-      alert("female");
+      console.log("female");
     }
 
+    //declare variables for day of week computation
+    let DD = userDate;
+    let MM = userMonth;
+
+    //Day of Week Computation
+    var dayOfWeek = ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7;
+    console.log(dayOfWeek);
+
+    dayOfWeek = parseInt(dayOfWeek);
+    alert(typeof(dayOfWeek));
+
+    //male name output
+
+    if(gender[0].checked == true){
+      var gender = "male";
+    }else if(gender[1].checked == true){
+      var gender = "female";
+      console.log("female");
+    }
 
   }
