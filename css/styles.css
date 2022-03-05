@@ -20,3 +20,12 @@ h2 {
   font-size: 20px;
   letter-spacing: .1rem;
 }
+form {
+  position: absolute;
+  top: 220px;
+  box-sizing: border-box;
+  border: 4px solid black;
+  margin-left: 560px;
+  border-style:double;
+  padding: 20px;
+}
