@@ -39,3 +39,10 @@ form {
   margin-left: 10px;
   padding: 2px 10px;
 }
+.radio_button {
+  padding-left: 60px;
+}
+.year_drop {
+  padding-left: 60px;
+  margin-left: 28px;
+}
