@@ -71,7 +71,7 @@ let yearDropdown = document.getElementById('year-dropdown');
     }else if(gender[1].checked == true){
       var gender = "female";
       console.log("female");
-    }
+    }else alert("Select Gender")
 
     //declare variables for day of week computation
     let DD = userDate;
@@ -79,18 +79,47 @@ let yearDropdown = document.getElementById('year-dropdown');
 
     //Day of Week Computation
     var dayOfWeek = ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7;
-    console.log(dayOfWeek);
+    alert(dayOfWeek);
 
     dayOfWeek = parseInt(dayOfWeek);
-    alert(typeof(dayOfWeek));
+    // alert(typeof(dayOfWeek));
 
-    //male name output
+    dayOfWeek = dayOfWeek -1;
+    dayOfWeek = Math.abs(dayOfWeek);
+    alert(dayOfWeek);
+    // alert(typeof(dayOfWeek));
 
-    if(gender[0].checked == true){
-      var gender = "male";
-    }else if(gender[1].checked == true){
-      var gender = "female";
-      console.log("female");
+    if(gender == "male" && dayOfWeek === 0){
+      alert("Born on a "+daysOfWeek[0]+ ", Your Aknan Name is "+maleName[0])
+    }else if(gender == "male" && dayOfWeek === 1){
+      alert("Born on a "+daysOfWeek[1]+ ", Your Aknan Name is "+maleName[1]);
+    }else if(gender == "male" && dayOfWeek === 2){
+      alert("Born on a "+daysOfWeek[2]+ ", Your Aknan Name is "+maleName[2])
+    }else if(gender == "male" && dayOfWeek === 3){
+      alert("Born on a "+daysOfWeek[3]+ ", Your Aknan Name is "+maleName[3])
+    }else if(gender == "male" && dayOfWeek === 4){
+      alert("Born on a "+daysOfWeek[4]+ ", Your Aknan Name is "+maleName[4])
+    }else if(gender == "male" && dayOfWeek === 5){
+      alert("Born on a "+daysOfWeek[5]+ ", Your Aknan Name is "+maleName[5])
+    }else if(gender == "male" && dayOfWeek === 5){
+      alert("Born on a "+daysOfWeek[6]+ ", Your Aknan Name is "+maleName[6])
+    }
+   
+
+    if(gender == "female" && dayOfWeek === 0){
+      alert("Born on a "+daysOfWeek[0]+ ", Your Aknan Name is "+femaleName[0])
+    }else if(gender == "female" && dayOfWeek === 1){
+      alert("Born on a "+daysOfWeek[1]+ ", Your Aknan Name is "+femaleName[1]);
+    }else if(gender == "female" && dayOfWeek === 2){
+      alert("Born on a "+daysOfWeek[2]+ ", Your Aknan Name is "+femaleName[2])
+    }else if(gender == "female" && dayOfWeek === 3){
+      alert("Born on a "+daysOfWeek[3]+ ", Your Aknan Name is "+femaleName[3])
+    }else if(gender == "female" && dayOfWeek === 4){
+      alert("Born on a "+daysOfWeek[4]+ ", Your Aknan Name is "+femaleName[4])
+    }else if(gender == "female" && dayOfWeek === 5){
+      alert("Born on a "+daysOfWeek[5]+ ", Your Aknan Name is "+femaleName[5])
+    }else if(gender == "female" && dayOfWeek === 5){
+      alert("Born on a "+daysOfWeek[6]+ ", Your Aknan Name is "+femaleName[6])
     }
 
   }
