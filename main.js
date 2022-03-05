@@ -9,3 +9,13 @@ let yearDropdown = document.getElementById('year-dropdown');
     yearDropdown.add(yearOption);      
     currentYear -= 1;    
    }
+
+  function getAknanName(){
+    //variables declaration
+
+    var userInputDate = document.getElementById("date").value;
+    var userInputMonth = document.getElementById("month").value;
+    var year = document.getElementById("year-dropdown");
+
+
+  }
