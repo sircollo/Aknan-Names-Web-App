@@ -16,6 +16,7 @@ let yearDropdown = document.getElementById('year-dropdown');
     var userInputDate = document.getElementById("userdate").value;
     var userInputMonth = document.getElementById("usermonth").value;
     var year = document.getElementById("year-dropdown");
+    
    
     //convert userInputDate and userInputMonth to int
     var userDate = parseInt(userInputDate);
@@ -38,5 +39,16 @@ let yearDropdown = document.getElementById('year-dropdown');
     if(userMonth <= 0 || userMonth > 31){
       alert("Enter valid Month");
     }
+
+    //get user selected year
+    var userYear = year.value;
+    var userYear = year.options[year.selectedIndex].text;
+    
+    //get century
+    let century = userYear[0] + userYear[1];
+    let CC = parseInt(century);
+    console.log(CC);
+
+
 
   }
