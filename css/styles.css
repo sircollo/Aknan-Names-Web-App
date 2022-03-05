@@ -13,3 +13,10 @@ h2 {
   top: 200px;
   padding-left: 3%;
 }
+.description {
+  position: absolute;
+  top: 250px;
+  padding-left: 3%;
+  font-size: 20px;
+  letter-spacing: .1rem;
+}
