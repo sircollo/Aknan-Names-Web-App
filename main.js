@@ -59,9 +59,6 @@ let yearDropdown = document.getElementById('year-dropdown');
     let yearSelected = userYear[2] + userYear[3];
     let YY = parseInt(yearSelected);
 
-    // alert(YY);
-    // alert(typeof(YY));
-
     //get user gender input
 
     var gender = document.getElementsByName("gender");
@@ -79,15 +76,15 @@ let yearDropdown = document.getElementById('year-dropdown');
 
     //Day of Week Computation
     var dayOfWeek = ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7;
-    alert(dayOfWeek);
+    console.log(dayOfWeek);
 
-    dayOfWeek = parseInt(dayOfWeek);
-    // alert(typeof(dayOfWeek));
+    dayOfWeek = parseInt(dayOfWeek.toFixed());
+    console.log(typeof(dayOfWeek));
 
     dayOfWeek = dayOfWeek -1;
     dayOfWeek = Math.abs(dayOfWeek);
-    alert(dayOfWeek);
-    // alert(typeof(dayOfWeek));
+    console.log(dayOfWeek);
+    
 
     if(gender == "male" && dayOfWeek === 0){
       alert("Born on a "+daysOfWeek[0]+ ", Your Aknan Name is "+maleName[0])
