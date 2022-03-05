@@ -32,6 +32,7 @@ form {
   border-style:double;
   padding: 20px;
   border-radius: 10px;
+  background-color: darkslategrey;
 }
 .input_area1 {
   width: 40%;
