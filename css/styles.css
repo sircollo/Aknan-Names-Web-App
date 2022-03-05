@@ -22,12 +22,13 @@ h2 {
 }
 form {
   position: absolute;
-  top: 220px;
+  top: 200px;
   box-sizing: border-box;
   border: 4px solid black;
   margin-left: 560px;
   border-style:double;
   padding: 20px;
+  border-radius: 10px;
 }
 .input_area1 {
   width: 40%;
