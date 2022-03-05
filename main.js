@@ -56,6 +56,16 @@ let yearDropdown = document.getElementById('year-dropdown');
     // alert(YY);
     // alert(typeof(YY));
 
-    
+    //get user gender input
+
+    var gender = document.getElementsByName("gender");
+    if(gender[0].checked == true){
+      var gender = "male";
+      alert("male")
+    }else if(gender[1].checked == true){
+      var gender = "female";
+      alert("female");
+    }
+
 
   }
