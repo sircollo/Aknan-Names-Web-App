@@ -30,7 +30,13 @@ let yearDropdown = document.getElementById('year-dropdown');
       alert("Enter valid Date");
     };
 
+    //user input - month validation
+    if(userInputMonth.length == " "){
+      alert("You did not Enter Month");
+    }
 
-
+    if(userMonth <= 0 || userMonth > 31){
+      alert("Enter valid Month");
+    }
 
   }
