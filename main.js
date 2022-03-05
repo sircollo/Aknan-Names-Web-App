@@ -49,6 +49,13 @@ let yearDropdown = document.getElementById('year-dropdown');
     let CC = parseInt(century);
     console.log(CC);
 
+    //get year
+    let yearSelected = userYear[2] + userYear[3];
+    let YY = parseInt(yearSelected);
 
+    // alert(YY);
+    // alert(typeof(YY));
+
+    
 
   }
