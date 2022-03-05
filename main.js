@@ -13,9 +13,14 @@ let yearDropdown = document.getElementById('year-dropdown');
   function getAknanName(){
     //variables declaration
 
-    var userInputDate = document.getElementById("date").value;
-    var userInputMonth = document.getElementById("month").value;
+    var userInputDate = document.getElementById("userdate").value;
+    var userInputMonth = document.getElementById("usermonth").value;
     var year = document.getElementById("year-dropdown");
+   
+    //convert userInputDate and userInputMonth to int
+    var userDate = parseInt(userInputDate);
+    var userMonth = parseInt(userInputMonth);
+    
 
 
   }
