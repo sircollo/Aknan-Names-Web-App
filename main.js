@@ -21,6 +21,16 @@ let yearDropdown = document.getElementById('year-dropdown');
     var userDate = parseInt(userInputDate);
     var userMonth = parseInt(userInputMonth);
     
+    //user input - date validation
+    if(userInputDate.length == " "){
+      alert("You did not Enter Date");
+    }
+
+    if(userDate <= 0 || userDate > 31){
+      alert("Enter valid Date");
+    };
+
+
 
 
   }
